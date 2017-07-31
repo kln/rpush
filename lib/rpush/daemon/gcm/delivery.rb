@@ -214,14 +214,14 @@ module Rpush
 
         def describe
           if @all_failed
-            error_description = "Failed to deliver to all recipients."
+            error_description = "Failed to deliver to all recipients 3."
           else
             index_list = map { |item| item[:index] }
-            error_description = "Failed to deliver to recipients #{index_list.join(', ')}."
+            error_description = "Failed to deliver to recipients 1 #{index_list.join(', ')}."
           end
 
           error_list = map { |item| item[:error] }
-          error_description + " Errors: #{error_list.join(', ')}."
+          error_description + " Errors 2: #{error_list.join(', ')}."
         end
       end
     end
